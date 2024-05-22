@@ -13,6 +13,7 @@ pip install selenium
 现在，您可以使用以下Python代码来访问Google首页并截图：
 
 ```python
+### pip install webdriver-manager --upgrade
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -24,7 +25,7 @@ chrome_service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=chrome_service)
 
 # 打开Google首页
-driver.get("https://www.google.com")
+driver.get("https://www.baidu.com")
 
 # 截图并保存
 driver.save_screenshot('google_homepage.png')
